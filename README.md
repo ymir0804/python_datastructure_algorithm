@@ -1,1 +1,1 @@
-# python_datastructure_algorithm
+## 파이썬 자료구조 및 알고리즘에 대해서 공부한 내용을 정리하고자 만들었습니다.
