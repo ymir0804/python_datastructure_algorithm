@@ -24,8 +24,23 @@ def reversing_words_sentence_logic(main_string):
     reverser(main_string, start_index, string_index-1)
     return "".join(main_string)
 
-def reverse_wrod_brute(main_string):
-    words,
+
+def reverse_word_brute(main_string):
+    word, sentence = [], []
+    for character in main_string:
+        # 조건문에서 빈 리스트의 값은 False 입니다. 공백이 여러개인 경우, 조건문을 건너뜁니다.
+        if character != " ":
+            word.append(character)
+        else:
+            if word:
+                sentence.append("".join(word))
+            # word 는 임시공간
+            word = []
+    # 마지막 단어가 있는경우, 문장에 추가
+    if word != " ":
+        sentence.append("".join())
+    sentence.reverse()
+    return " ".join(sentence)
 
 
 if __name__ == '__main__':
