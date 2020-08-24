@@ -24,6 +24,9 @@ def reversing_words_sentence_logic(main_string):
     reverser(main_string, start_index, string_index-1)
     return "".join(main_string)
 
+def reverse_wrod_brute(main_string):
+    words,
+
 
 if __name__ == '__main__':
     str1 = "파이썬 알고리즘 정말 재미있다."
