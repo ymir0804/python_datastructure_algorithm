@@ -43,10 +43,30 @@ def reverse_word_brute(main_string):
     return " ".join(sentence)
 
 
+def reversing_words_slice(word):
+    new_word = []
+    words = word.split(" ")
+    for word in words[::-1]:
+        new_word.append(word)
+    return " ".join(new_word)
+
+
+def reversing_words_basic(main_string):
+    words = main_string.split(" ")
+    rev_set = " ".join(reversed(words))
+
+
+def reversing_words_basic2(main_string):
+    words = main_string.split(" ")
+    words.reverse()
+    return " ".join(words)
+
+
 if __name__ == '__main__':
     str1 = "파이썬 알고리즘 정말 재미있다."
     str2 = reversing_words_sentence_logic(list(str1))
     str3 = reverse_word_brute(str1)
+    str4 = reversing_words_slice()
     print(str2)
     print(str3)
 
