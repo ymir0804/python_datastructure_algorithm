@@ -46,6 +46,8 @@ def reverse_word_brute(main_string):
 if __name__ == '__main__':
     str1 = "파이썬 알고리즘 정말 재미있다."
     str2 = reversing_words_sentence_logic(list(str1))
+    str3 = reverse_word_brute(str1)
     print(str2)
+    print(str3)
 
 
